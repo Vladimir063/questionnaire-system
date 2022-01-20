@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery food</title>
+    <link rel="stylesheet"  href="/css/main.css"/>
+</head>
+<body>
+<h1>Анкета:
+<span th:text = "${questionnaire.name}"> </span>
+</h1>
+<h2> Существующие вопросы:  </h2>
+
+<form method="post" action="/add-new-question" th:object="${questionnaire}">
+    <input type="hidden"  th:field = "${questionnaire.id}">
+    <input type="hidden"  th:field = "${questionnaire.name}">
+    <button>Добавить вопрос</button>
+</form>
+
+</body>
+</html>
+

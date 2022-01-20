@@ -9,9 +9,10 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring", uses = { QuestionMapper.class })
 public interface AnswerMapper {
 
-    @Mapping(target = "questionDto" , source = "questionEntity")
+    @Mapping(target = "questionId" , source = "questionEntity.id")
+    @Mapping(target = "questionName" , source = "questionEntity.name")
     AnswerDto answerToDto(AnswerEntity answerEntity);
 
     @InheritInverseConfiguration
-    AnswerEntity answerEntity(AnswerDto answerDto);
+    AnswerEntity answerToEntity(AnswerDto answerDto);
 }

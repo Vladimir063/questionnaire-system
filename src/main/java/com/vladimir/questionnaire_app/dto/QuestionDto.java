@@ -17,7 +17,13 @@ public class QuestionDto {
 
     private Integer countAnswer;
 
-    private QuestionnaireDto questionnaireDto;
+    private Long questionnaireId;
+
+    private String questionnaireName;
 
     private List<AnswerDto> answersDto;
+
+    public void addAnswer(AnswerDto answerDto) {
+        this.answersDto.add(answerDto);
+    }
 }

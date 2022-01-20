@@ -9,7 +9,8 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring", uses = { QuestionnaireMapper.class, AnswerMapper.class })
 public interface QuestionMapper {
 
-    @Mapping(target = "questionnaireDto", source = "questionnaireEntity")
+    @Mapping(target = "questionnaireId", source = "questionnaireEntity.id")
+    @Mapping(target = "questionnaireName", source = "questionnaireEntity.name")
     @Mapping(target = "answersDto", source = "answersEntity")
     QuestionDto questionToDto(QuestionEntity questionEntity);
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery food</title>
+    <link rel="stylesheet"  href="/css/main.css"/>
+</head>
+<body>
+<h1>Все анкеты</h1>
+
+<form method="get" action="/new-questionnaire">
+    <button>Создать анкету</button>
+</form>
+
+
+<table class="content-table", sortable="true">
+    <thead>
+    <tr>
+        <th>№</th>
+        <th>Название анкеты</th>
+        <th>Заполнить</th>
+        <th>Редактировать</th>
+        <th>Удалить</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="questionnaire : ${questionnaires}">
+
+        <td th:text = "${questionnaire.id}"></td>
+        <td th:text = "${questionnaire.name}"></td>
+        <td>Заполнить</td>
+        <td>Редактировать</td>
+        <td>Удалить</td>
+
+    </tr>
+
+    </tbody>
+</table>
+
+
+</body>
+</html>
+

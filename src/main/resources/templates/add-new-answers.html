@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery food</title>
+    <link rel="stylesheet"  href="/css/main.css"/>
+</head>
+<body>
+<h1>Добавление ответов к вопросу:
+    <span th:text = "${question.name}"> </span>
+</h1>
+
+<form method="post" action="/save-answers" th:object="${question}">
+    <table>
+        <thead>
+        <tr>
+            <th> Варианты ответов</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="answer, itemStat : *{answersDto}">
+            <td><input th:field="*{answersDto[__${itemStat.index}__].name}" />
+                <input type="hidden" th:field="*{answersDto[__${itemStat.index}__].questionId}" />
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <button>Сохранить</button>
+</form>
+
+</body>
+</html>
+

@@ -12,10 +12,15 @@ import javax.persistence.*;
 @ToString
 public class AnswerDto {
 
-
     private Long id;
 
     private String name;
 
-    private QuestionDto questionDto;
+
+
+    private Long questionId;
+
+    private String questionName;
+
+
 }

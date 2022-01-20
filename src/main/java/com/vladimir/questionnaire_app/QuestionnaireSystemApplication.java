@@ -1,4 +1,4 @@
-package com.vladimir.questionnairesystem;
+package com.vladimir.questionnaire_app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

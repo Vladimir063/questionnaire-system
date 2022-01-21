@@ -2,6 +2,7 @@ package com.vladimir.questionnaire_app.dto;
 
 import lombok.*;
 
+import javax.validation.constraints.*;
 import java.util.List;
 
 @Data
@@ -13,8 +14,10 @@ public class QuestionDto {
 
     private Long id;
 
+    @NotBlank(message = "Введите название вопроса")
     private String name;
 
+   
     private Integer countAnswer;
 
     private Long questionnaireId;

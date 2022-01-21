@@ -13,12 +13,17 @@
 <form method="post" action="/save-or-update-question" th:object="${question}">
     <label for="name">Введите название вопроса</label>
     <input type="text" th:field="*{name}" id="name">
-    <label for="count">Введите количество ответов для вопроса</label>
-    <input type="text" th:field="*{countAnswer}" id="count">
+    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" th:errorclass="invalid-input"></span><br>
+
+    <label for="countAnswer">Введите количество ответов для вопроса</label>
+    <span th:if="${#fields.hasErrors('countAnswer')}" th:errors="*{countAnswer}" th:errorclass="invalid-input"></span>
+    <input type="text" th:field="*{countAnswer}" id="countAnswer">
+
     <button>Добавить ответы для вопроса</button>
 
+    <input type="hidden"  th:field = "*{id}">
     <input type="hidden"  th:field = "*{questionnaireId}">
-    <input type="hidden"  th:field = "*{questionnaireId}">
+    <input type="hidden"  th:field = "*{questionnaireName}">
 
 </form>
 

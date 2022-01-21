@@ -19,9 +19,8 @@ public class AnswerController {
     @PostMapping("/save-answers")
     public String saveAnswers(@ModelAttribute QuestionDto questionDto) {
         List<AnswerDto> answersDto = questionDto.getAnswersDto();
-        System.out.println();
-        answerService.saveAnswers(answersDto);
-        return "redirect:/index";
+        answerService.saveAnswers(answersDto, questionDto);
+        return "redirect:/questionnaire/" + questionDto.getQuestionnaireId();
     }
 
 }

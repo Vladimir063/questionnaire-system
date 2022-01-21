@@ -7,8 +7,10 @@ import com.vladimir.questionnaire_app.services.QuestionnaireService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -32,7 +34,10 @@ public class QuestionnaireController {
     }
     
     @PostMapping("/save-questionnaire")
-    public String saveQuestionnaire(@ModelAttribute QuestionnaireDto questionnaireDto) {
+    public String saveQuestionnaire(@Valid @ModelAttribute("questionnaire") QuestionnaireDto questionnaireDto, BindingResult result) {
+        if (result.hasErrors()) {
+            return "new-questionnaire";
+        }
         Long questionnaireId = questionnaireService.saveQuestionnaire(questionnaireDto);
         return "redirect:/questionnaire/" + questionnaireId ;
     }

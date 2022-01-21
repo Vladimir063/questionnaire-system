@@ -7,10 +7,13 @@ import com.vladimir.questionnaire_app.services.QuestionService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import javax.validation.Valid;
 
 @Controller
 @AllArgsConstructor
@@ -27,20 +30,19 @@ public class QuestionController {
         return "form-question";
     }
 
-    @PostMapping("/save-question")
-    public String saveQuestion(@ModelAttribute QuestionDto questionDto , Model model) {
-        Long questionId = questionService.saveQuestion(questionDto);
+    @PostMapping("/save-or-update-question")
+    public String saveQuestion(@Valid @ModelAttribute("question") QuestionDto questionDto, BindingResult result ) {
+        if (result.hasErrors()) {
+            return "form-question";
+        }
+        Long questionId = questionService.saveOrUpdateQuestion(questionDto);
         return "redirect:/question/" + questionId + "/add-new-answers";
     }
 
     @GetMapping("/question/{id}/add-new-answers")
     public String questionById(@PathVariable Long id, Model model) {
         QuestionDto questionDto = questionService.findById(id);
-        for (int i=0; i< questionDto.getCountAnswer(); i++){
-            AnswerDto answerDto = new AnswerDto();
-            answerDto.setQuestionId(questionDto.getId());
-            questionDto.addAnswer(answerDto);
-        }
+        questionService.initListAnswer(questionDto);
         model.addAttribute("question", questionDto);
         return "add-new-answers";
     }
@@ -59,6 +61,6 @@ public class QuestionController {
         return "form-question";
     }
 
-    
+
 
 }

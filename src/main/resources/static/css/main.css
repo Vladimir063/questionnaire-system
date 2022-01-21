@@ -37,5 +37,9 @@
     color: #009879;
 }
 
+.invalid-input {
+    color: #cb4846;
+    font-size: .85rem;
+}
 
 

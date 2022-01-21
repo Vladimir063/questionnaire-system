@@ -19,6 +19,7 @@
     <tr>
         <th>№</th>
         <th>Название анкеты</th>
+        <th>Просмотр</th>
         <th>Заполнить</th>
         <th>Редактировать</th>
         <th>Удалить</th>
@@ -29,12 +30,11 @@
 
         <td th:text = "${questionnaire.id}"></td>
         <td th:text = "${questionnaire.name}"></td>
+        <td><a th:href="@{'/questionnaire/' + ${questionnaire.id}}">Просмотр</a></td>
         <td>Заполнить</td>
-        <td>Редактировать</td>
-        <td>Удалить</td>
-
+        <td><a th:href="@{'/edit-questionnaire/' + ${questionnaire.id}}">Редактировать</a></td>
+        <td><a th:href="@{'/delete-questionnaire/' + ${questionnaire.id}}">Удалить</a></td>
     </tr>
-
     </tbody>
 </table>
 

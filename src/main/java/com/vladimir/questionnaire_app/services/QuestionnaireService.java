@@ -12,4 +12,8 @@ public interface QuestionnaireService {
     Long saveQuestionnaire(QuestionnaireDto questionnaireDto);
 
     QuestionnaireDto findById(Long id);
+
+    void deleteQuestionnaireById(Long id);
+
+    Long updateQuestionnaire(QuestionnaireDto questionnaireDto);
 }

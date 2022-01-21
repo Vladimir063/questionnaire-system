@@ -29,7 +29,7 @@ public class QuestionEntity {
     @JoinColumn(name = "questionnaire_id")
     private QuestionnaireEntity questionnaireEntity;
 
-    @OneToMany(mappedBy = "questionEntity")
+    @OneToMany(mappedBy = "questionEntity", cascade = CascadeType.ALL)
     private List<AnswerEntity> answersEntity;
 
 }

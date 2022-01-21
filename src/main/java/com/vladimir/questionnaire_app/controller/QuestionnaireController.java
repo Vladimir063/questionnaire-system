@@ -37,11 +37,30 @@ public class QuestionnaireController {
         return "redirect:/questionnaire/" + questionnaireId ;
     }
 
+    @GetMapping("/edit-questionnaire/{id}")
+    public String editQuestionnaire(@PathVariable Long id, Model model) {
+        QuestionnaireDto questionnaireDto = questionnaireService.findById(id);
+        model.addAttribute("questionnaire", questionnaireDto);
+        return "edit-questionnaire";
+    }
+
+    @PostMapping("/update-questionnaire")
+    public String updateQuestionnaire(@ModelAttribute QuestionnaireDto questionnaireDto) {
+        Long questionnaireId = questionnaireService.updateQuestionnaire(questionnaireDto);
+        return "redirect:/questionnaire/" + questionnaireId ;
+    }
+
     @GetMapping("/questionnaire/{id}")
     public String questionnaireById(@PathVariable Long id, Model model){
         QuestionnaireDto questionnaireDto = questionnaireService.findById(id);
         model.addAttribute("questionnaire", questionnaireDto);
         return "questionnaire";
+    }
+
+    @GetMapping("/delete-questionnaire/{id}")
+    public String deleteQuestionnaireById(@PathVariable Long id){
+        questionnaireService.deleteQuestionnaireById(id);
+        return "redirect:/index";
     }
 
 

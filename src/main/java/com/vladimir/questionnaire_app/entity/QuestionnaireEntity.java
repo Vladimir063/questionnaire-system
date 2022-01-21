@@ -22,7 +22,7 @@ public class QuestionnaireEntity {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "questionnaireEntity")
+    @OneToMany(mappedBy = "questionnaireEntity", cascade = CascadeType.ALL)
     private List<QuestionEntity> questionsEntity;
 
 }

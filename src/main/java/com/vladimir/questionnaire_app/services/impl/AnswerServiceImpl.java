@@ -24,10 +24,8 @@ public class AnswerServiceImpl implements AnswerService {
     @Override
     @Transactional
     public void saveAnswers(List<AnswerDto> answersDto) {
-        System.out.println();
         List<AnswerEntity> answerEntities =
                 answersDto.stream().map(answerMapper::answerToEntity).collect(Collectors.toList());
-        System.out.println();
         answerRepository.saveAll(answerEntities);
     }
 }

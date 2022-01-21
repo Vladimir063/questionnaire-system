@@ -10,13 +10,40 @@
 <h1>Анкета:
 <span th:text = "${questionnaire.name}"> </span>
 </h1>
-<h2> Существующие вопросы:  </h2>
+
+
+<table class="content-table", sortable="true">
+    <thead>
+    <tr>
+
+        <th>Название вопроса</th>
+        <th>Варианты ответов</th>
+        <th>Редактировать</th>
+        <th>Удалить</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="question : ${questionnaire.questionsDto}">
+
+        <td th:text = "${question.name}"></td>
+        <td>
+        <div th:each= "answer : ${question.answersDto}">
+            <div th:text = "${answer.name}"> </div>
+        </div>
+        </td>
+        <td><a th:href="@{'/edit-question/' + ${question.id}}">Редактировать</a></td>
+        <td><a th:href="@{'/delete-question/' + ${question.id}}">Удалить</a></td>
+    </tr>
+    </tbody>
+</table>
+
 
 <form method="post" action="/add-new-question" th:object="${questionnaire}">
     <input type="hidden"  th:field = "${questionnaire.id}">
     <input type="hidden"  th:field = "${questionnaire.name}">
     <button>Добавить вопрос</button>
 </form>
+
 
 </body>
 </html>

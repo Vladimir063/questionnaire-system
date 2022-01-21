@@ -24,7 +24,7 @@ public class QuestionController {
         questionDto.setQuestionnaireId(questionnaireDto.getId());
         questionDto.setQuestionnaireName(questionnaireDto.getName());
         model.addAttribute("question", questionDto);
-        return "form-creation-question";
+        return "form-question";
     }
 
     @PostMapping("/save-question")
@@ -44,5 +44,21 @@ public class QuestionController {
         model.addAttribute("question", questionDto);
         return "add-new-answers";
     }
+
+    @GetMapping("/delete-question/{id}")
+    public String deleteQuestionById(@PathVariable Long id){
+        QuestionDto questionDto = questionService.findById(id);  // ищем questionDto, чтобы взять id анкеты и сделать редирект на страницу анкеты
+        questionService.deleteQuestionById(id);
+        return "redirect:/questionnaire/" + questionDto.getQuestionnaireId();
+    }
+
+    @GetMapping("/edit-question/{id}")
+    public String editQuestion(@PathVariable Long id, Model model){
+        QuestionDto questionDto = questionService.findById(id);
+        model.addAttribute("question", questionDto);
+        return "form-question";
+    }
+
+    
 
 }

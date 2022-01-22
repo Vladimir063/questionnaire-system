@@ -7,12 +7,13 @@
     <link rel="stylesheet"  href="/css/main.css"/>
 </head>
 <body>
+<a th:href="@{'/all-results/'}">Результы анкетерования</a>
+
 <h1>Все анкеты</h1>
 
 <form method="get" action="/new-questionnaire">
     <button>Создать анкету</button>
 </form>
-
 
 <table class="content-table", sortable="true">
     <thead>

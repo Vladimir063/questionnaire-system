@@ -43,3 +43,38 @@
 }
 
 
+
+/*форма логин*/
+
+.auth{
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.auth-title{
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: #c61919;
+    text-align: center;
+}
+
+.auth-login-group input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 10px;
+}
+
+.auth button{
+    display: block;
+    padding: 10px 40px;
+    margin: 0 auto;
+    color: white;
+    background-color: #034c03;
+}
+
+.auth button:hover{
+    background-color: #04b604;
+}

@@ -16,8 +16,6 @@ public class AnswerDto {
 
     private String name;
 
-
-
     private Long questionId;
 
     private String questionName;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery food</title>
+    <link rel="stylesheet"  href="/css/main.css"/>
+</head>
+<body>
+<h1>Все результаты анкетирования</h1>
+
+<table class="content-table", sortable="true">
+    <thead>
+    <tr>
+        <th>Пользватель</th>
+        <th>Анкета</th>
+        <th>Ответы</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="userAnswer : ${userAnswerList}">
+        <td th:text = "${userAnswer.userEntity.name}"></td>
+        <td th:text = "${userAnswer.answerEntity.questionEntity.questionnaireEntity.name}"></td>
+        <td><a th:href="@{'/userAnswer/' + ${userAnswer.id}}">Просмотр</a></td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
+

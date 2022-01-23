@@ -32,7 +32,7 @@
         <td th:text = "${questionnaire.id}"></td>
         <td th:text = "${questionnaire.name}"></td>
         <td><a th:href="@{'/questionnaire/' + ${questionnaire.id}}">Просмотр</a></td>
-        <td>Заполнить</td>
+        <td><a th:href="@{'/fill-questionnaire/' + ${questionnaire.id}}">Заполнить</a></td>
         <td><a th:href="@{'/edit-questionnaire/' + ${questionnaire.id}}">Редактировать</a></td>
         <td><a th:href="@{'/delete-questionnaire/' + ${questionnaire.id}}">Удалить</a></td>
     </tr>

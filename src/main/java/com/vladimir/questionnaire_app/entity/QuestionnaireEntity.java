@@ -3,6 +3,7 @@ package com.vladimir.questionnaire_app.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -25,4 +26,7 @@ public class QuestionnaireEntity {
     @OneToMany(mappedBy = "questionnaireEntity", cascade = CascadeType.ALL)
     private List<QuestionEntity> questionsEntity;
 
+
+    @OneToMany(mappedBy = "questionnaireEntity")
+    private List<UserQuestionnaireEntity> userQuestionnaireEntities = new ArrayList<>();
 }

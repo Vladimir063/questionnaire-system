@@ -4,6 +4,7 @@ import lombok.*;
 import org.aspectj.weaver.patterns.TypePatternQuestions;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -26,4 +27,7 @@ public class AnswerEntity {
     @ManyToOne
     @JoinColumn(name = "question_id")
     private QuestionEntity questionEntity;
+
+    @OneToMany(mappedBy = "answerEntity")
+    private List<UserAnswerEntity> userAnswerEntities = new ArrayList<>();
 }

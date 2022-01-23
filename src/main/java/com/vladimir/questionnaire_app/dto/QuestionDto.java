@@ -17,7 +17,6 @@ public class QuestionDto {
     @NotBlank(message = "Введите название вопроса")
     private String name;
 
-   
     private Integer countAnswer;
 
     private Long questionnaireId;

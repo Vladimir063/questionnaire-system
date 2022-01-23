@@ -7,11 +7,11 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(exclude = {"userEntity","answerEntity"})
+@ToString(exclude = {"userEntity","questionnaireEntity"})
 @Builder
 @Entity
-@Table(name = "users_answer")
-public class UserAnswerEntity {
+@Table(name = "user_questionnaire")
+public class UserQuestionnaireEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,9 +23,7 @@ public class UserAnswerEntity {
     private UserEntity userEntity;
 
     @ManyToOne
-    @JoinColumn(name = "answer_id")
-    private AnswerEntity answerEntity;
-
-
+    @JoinColumn(name = "questionnaire_id")
+    private QuestionnaireEntity questionnaireEntity;
 
 }

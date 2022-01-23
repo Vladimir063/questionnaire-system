@@ -18,10 +18,11 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="userAnswer : ${userAnswerList}">
-        <td th:text = "${userAnswer.userEntity.name}"></td>
-        <td th:text = "${userAnswer.answerEntity.questionEntity.questionnaireEntity.name}"></td>
-        <td><a th:href="@{'/userAnswer/' + ${userAnswer.id}}">Просмотр</a></td>
+    <tr th:each="userQuestionnaire : ${userQuestionnaires}">
+        <td th:text = "${userQuestionnaire.userEntity.name}"></td>
+        <td th:text = "${userQuestionnaire.questionnaireEntity.name}"></td>
+        <td><a th:href="@{'/userAnswer/' + ${userQuestionnaire.userEntity.id} + '/'
+        + ${userQuestionnaire.questionnaireEntity.id} }">Просмотр</a></td>
     </tr>
     </tbody>
 </table>

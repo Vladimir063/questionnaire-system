@@ -8,6 +8,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -38,5 +40,16 @@ public class UserEntity {
     @Column(name = "status")
     @Enumerated(value = EnumType.STRING)
     private Status status;
+//
+//    @ManyToMany
+//    private List<QuestionnaireEntity> questionnaireEntities;
+//
+//    @ManyToMany
+//    private List<AnswerEntity> answers;
 
+    @OneToMany(mappedBy = "userEntity")
+    private List<UserQuestionnaireEntity> userQuestionnaireEntities = new ArrayList<>();
+
+    @OneToMany(mappedBy = "userEntity")
+    private List<UserAnswerEntity> userAnswerEntities = new ArrayList<>();
 }

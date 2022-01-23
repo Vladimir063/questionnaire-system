@@ -7,8 +7,8 @@
     <link rel="stylesheet"  href="/css/main.css"/>
 </head>
 <body>
-<h1>Ответы пользователя: <span th:text="${userAnswer.userEntity.name}"> </span></h1>
-<h2>Анкета <span th:text="${userAnswer.answerEntity.questionEntity.questionnaireEntity.name}"> </span></h2>
+<h1>Ответы пользователя: <span th:text="${user.name}"> </span></h1>
+<h2>Анкета <span th:text="${questionnaire.name}"> </span></h2>
 
 <table class="content-table", sortable="true">
     <thead>
@@ -18,9 +18,9 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="answer: ${userAnswer.answerEntity.questionEntity.answersEntity}">
-        <td th:text = "${answer.questionEntity.name}"></td>
-        <td th:text = "${answer.name}"></td>
+    <tr th:each="u : ${map.entrySet()}">
+        <td th:text = "${u.getKey()}"></td>
+        <td th:text = "${u.getValue().toString().substring(1, u.getValue().toString().length() - 1 )}"></td>
     </tr>
     </tbody>
 </table>

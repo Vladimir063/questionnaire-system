@@ -3565,3 +3565,289 @@ INSERT INTO users_answer (id, answer_id, user_ud) values (1, 1, 3), (2, 4, 3), (
 2022-01-25 23:15:42.920  INFO 13912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-01-25 23:15:42.921  INFO 13912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-01-25 23:15:45.732  INFO 13912 --- [http-nio-8080-exec-8] c.v.q.controller.AuthController          : Successful login admin@mail.com
+2022-01-25 23:19:04.655  INFO 11648 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 11648 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-25 23:19:04.656  INFO 11648 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-25 23:19:04.703  INFO 11648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-25 23:19:04.704  INFO 11648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-25 23:19:05.346  INFO 11648 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-25 23:19:05.413  INFO 11648 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+2022-01-25 23:19:05.966  INFO 11648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-25 23:19:05.973  INFO 11648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-25 23:19:05.974  INFO 11648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-25 23:19:06.049  INFO 11648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-25 23:19:06.050  INFO 11648 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1345 ms
+2022-01-25 23:19:06.079  INFO 11648 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-25 23:19:06.161  INFO 11648 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-25 23:19:06.170  INFO 11648 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:430db30e-0661-467c-8a7f-c9d8bdf5d2e6'
+2022-01-25 23:19:06.320  INFO 11648 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-25 23:19:06.352  INFO 11648 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-25 23:19:06.447  INFO 11648 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-25 23:19:06.523  INFO 11648 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-25 23:19:07.064  INFO 11648 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-25 23:19:07.074  INFO 11648 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-25 23:19:07.391  WARN 11648 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-25 23:19:07.799  INFO 11648 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f64b75b, org.springframework.security.web.context.SecurityContextPersistenceFilter@57040f81, org.springframework.security.web.header.HeaderWriterFilter@61028aab, org.springframework.security.web.authentication.logout.LogoutFilter@25d1d623, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@39cdd1eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bb9070e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5afba3ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@139f33e6, org.springframework.security.web.session.SessionManagementFilter@6cebdbee, org.springframework.security.web.access.ExceptionTranslationFilter@79a7f361, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7443da2f]
+2022-01-25 23:19:08.008  INFO 11648 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-25 23:19:08.213  INFO 11648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-25 23:19:08.261  INFO 11648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-25 23:19:08.279  INFO 11648 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Started QuestionnaireSystemApplication in 4.041 seconds (JVM running for 4.841)
+2022-01-25 23:19:13.962  INFO 11648 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-25 23:19:13.963  INFO 11648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-25 23:19:13.965  INFO 11648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-01-25 23:26:36.274  INFO 11648 --- [http-nio-8080-exec-3] c.v.q.controller.AuthController          : Successful login admin@mail.com
+2022-01-25 23:35:01.285  INFO 11688 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 11688 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-25 23:35:01.290  INFO 11688 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-25 23:35:01.368  INFO 11688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-25 23:35:01.371  INFO 11688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-25 23:35:02.060  INFO 11688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-25 23:35:02.125  INFO 11688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+2022-01-25 23:35:02.669  INFO 11688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-25 23:35:02.677  INFO 11688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-25 23:35:02.678  INFO 11688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-25 23:35:02.749  INFO 11688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-25 23:35:02.750  INFO 11688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1378 ms
+2022-01-25 23:35:02.779  INFO 11688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-25 23:35:02.859  INFO 11688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-25 23:35:02.867  INFO 11688 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:7ed4d88c-3812-418e-a0e2-5017282153f5'
+2022-01-25 23:35:03.002  WARN 11688 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #12 of URL [file:/D:/IdeaProjects/questionnaire-system/target/classes/data.sql]: INSERT INTO user_questionnaire (id, user_id, questionnaire_id) values (2, 3, 2), (3, 4, 2); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Нарушение ссылочной целостности: "CONSTRAINT_4E8: PUBLIC.USER_QUESTIONNAIRE FOREIGN KEY(USER_ID) REFERENCES PUBLIC.USERS(ID) (4)"
+Referential integrity constraint violation: "CONSTRAINT_4E8: PUBLIC.USER_QUESTIONNAIRE FOREIGN KEY(USER_ID) REFERENCES PUBLIC.USERS(ID) (4)"; SQL statement:
+INSERT INTO user_questionnaire (id, user_id, questionnaire_id) values (2, 3, 2), (3, 4, 2) [23506-200]
+2022-01-25 23:35:03.003  INFO 11688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-25 23:35:03.006  INFO 11688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-25 23:35:03.008  INFO 11688 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-25 23:35:03.038  INFO 11688 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-25 23:35:03.184 ERROR 11688 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #12 of URL [file:/D:/IdeaProjects/questionnaire-system/target/classes/data.sql]: INSERT INTO user_questionnaire (id, user_id, questionnaire_id) values (2, 3, 2), (3, 4, 2); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Нарушение ссылочной целостности: "CONSTRAINT_4E8: PUBLIC.USER_QUESTIONNAIRE FOREIGN KEY(USER_ID) REFERENCES PUBLIC.USERS(ID) (4)"
+Referential integrity constraint violation: "CONSTRAINT_4E8: PUBLIC.USER_QUESTIONNAIRE FOREIGN KEY(USER_ID) REFERENCES PUBLIC.USERS(ID) (4)"; SQL statement:
+INSERT INTO user_questionnaire (id, user_id, questionnaire_id) values (2, 3, 2), (3, 4, 2) [23506-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.2.jar:2.6.2]
+	at com.vladimir.questionnaire_app.QuestionnaireSystemApplication.main(QuestionnaireSystemApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #12 of URL [file:/D:/IdeaProjects/questionnaire-system/target/classes/data.sql]: INSERT INTO user_questionnaire (id, user_id, questionnaire_id) values (2, 3, 2), (3, 4, 2); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Нарушение ссылочной целостности: "CONSTRAINT_4E8: PUBLIC.USER_QUESTIONNAIRE FOREIGN KEY(USER_ID) REFERENCES PUBLIC.USERS(ID) (4)"
+Referential integrity constraint violation: "CONSTRAINT_4E8: PUBLIC.USER_QUESTIONNAIRE FOREIGN KEY(USER_ID) REFERENCES PUBLIC.USERS(ID) (4)"; SQL statement:
+INSERT INTO user_questionnaire (id, user_id, questionnaire_id) values (2, 3, 2), (3, 4, 2) [23506-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.14.jar:5.3.14]
+	... 23 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Нарушение ссылочной целостности: "CONSTRAINT_4E8: PUBLIC.USER_QUESTIONNAIRE FOREIGN KEY(USER_ID) REFERENCES PUBLIC.USERS(ID) (4)"
+Referential integrity constraint violation: "CONSTRAINT_4E8: PUBLIC.USER_QUESTIONNAIRE FOREIGN KEY(USER_ID) REFERENCES PUBLIC.USERS(ID) (4)"; SQL statement:
+INSERT INTO user_questionnaire (id, user_id, questionnaire_id) values (2, 3, 2), (3, 4, 2) [23506-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:319) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:261) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.fireConstraints(Table.java:1057) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.fireAfterRow(Table.java:1075) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:211) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	... 33 common frames omitted
+
+2022-01-25 23:36:02.155  INFO 13904 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 13904 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-25 23:36:02.156  INFO 13904 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-25 23:36:02.220  INFO 13904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-25 23:36:02.220  INFO 13904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-25 23:36:02.906  INFO 13904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-25 23:36:02.977  INFO 13904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 6 JPA repository interfaces.
+2022-01-25 23:36:03.570  INFO 13904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-25 23:36:03.579  INFO 13904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-25 23:36:03.579  INFO 13904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-25 23:36:03.668  INFO 13904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-25 23:36:03.668  INFO 13904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1447 ms
+2022-01-25 23:36:03.711  INFO 13904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-25 23:36:03.817  INFO 13904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-25 23:36:03.826  INFO 13904 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bf463043-1945-4018-828d-dc1593a3d1cf'
+2022-01-25 23:36:04.002  INFO 13904 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-25 23:36:04.034  INFO 13904 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-25 23:36:04.127  INFO 13904 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-25 23:36:04.213  INFO 13904 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-25 23:36:04.740  INFO 13904 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-25 23:36:04.747  INFO 13904 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-25 23:36:05.046  WARN 13904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-25 23:36:05.463  INFO 13904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a82bb3d, org.springframework.security.web.context.SecurityContextPersistenceFilter@34619fad, org.springframework.security.web.header.HeaderWriterFilter@212241c7, org.springframework.security.web.authentication.logout.LogoutFilter@1d4a199c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@746a8034, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f526720, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d5a3311, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@249ef5d6, org.springframework.security.web.session.SessionManagementFilter@632e8401, org.springframework.security.web.access.ExceptionTranslationFilter@79ded703, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77e4e039]
+2022-01-25 23:36:05.669  INFO 13904 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-25 23:36:05.856  INFO 13904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-25 23:36:05.904  INFO 13904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-25 23:36:05.920  INFO 13904 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Started QuestionnaireSystemApplication in 4.206 seconds (JVM running for 5.053)
+2022-01-25 23:36:13.399  INFO 13904 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-25 23:36:13.400  INFO 13904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-25 23:36:13.402  INFO 13904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-25 23:36:15.971  INFO 13904 --- [http-nio-8080-exec-8] c.v.q.controller.AuthController          : Successful login admin@mail.com
+2022-01-25 23:36:21.365  INFO 13904 --- [http-nio-8080-exec-1] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:36:23.615  INFO 13904 --- [http-nio-8080-exec-2] c.v.q.controller.UserAnswerController    : show answer on question for user Ivan
+2022-01-25 23:36:30.937  INFO 13904 --- [http-nio-8080-exec-5] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:36:32.058  INFO 13904 --- [http-nio-8080-exec-7] c.v.q.controller.UserAnswerController    : show answer on question for user Ivan
+2022-01-25 23:36:33.555  INFO 13904 --- [http-nio-8080-exec-9] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:36:34.706  INFO 13904 --- [http-nio-8080-exec-1] c.v.q.controller.UserAnswerController    : show answer on question for user Petr
+2022-01-25 23:36:36.160  INFO 13904 --- [http-nio-8080-exec-2] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:36:37.114  INFO 13904 --- [http-nio-8080-exec-5] c.v.q.controller.UserAnswerController    : show answer on question for user Petr
+2022-01-25 23:36:38.937  INFO 13904 --- [http-nio-8080-exec-7] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:36:39.978  INFO 13904 --- [http-nio-8080-exec-9] c.v.q.controller.UserAnswerController    : show answer on question for user Ivan
+2022-01-25 23:36:41.111  INFO 13904 --- [http-nio-8080-exec-1] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:36:42.968  INFO 13904 --- [http-nio-8080-exec-2] c.v.q.controller.UserAnswerController    : show answer on question for user Ivan
+2022-01-25 23:37:56.276  INFO 13888 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 13888 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-25 23:37:56.278  INFO 13888 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-25 23:37:56.334  INFO 13888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-25 23:37:56.335  INFO 13888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-25 23:37:57.011  INFO 13888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-25 23:37:57.080  INFO 13888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+2022-01-25 23:37:57.640  INFO 13888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-25 23:37:57.647  INFO 13888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-25 23:37:57.647  INFO 13888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-25 23:37:57.724  INFO 13888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-25 23:37:57.724  INFO 13888 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
+2022-01-25 23:37:57.754  INFO 13888 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-25 23:37:57.841  INFO 13888 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-25 23:37:57.849  INFO 13888 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:3f32e5bc-106c-41d9-ab86-2088e4662cba'
+2022-01-25 23:37:57.994  INFO 13888 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-25 23:37:58.025  INFO 13888 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-25 23:37:58.118  INFO 13888 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-25 23:37:58.192  INFO 13888 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-25 23:37:58.709  INFO 13888 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-25 23:37:58.716  INFO 13888 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-25 23:37:59.012  WARN 13888 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-25 23:37:59.404  INFO 13888 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b179b32, org.springframework.security.web.context.SecurityContextPersistenceFilter@5890279c, org.springframework.security.web.header.HeaderWriterFilter@2d1c7d6f, org.springframework.security.web.authentication.logout.LogoutFilter@341f3dca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d06583a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33206b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56e3421a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2faa297d, org.springframework.security.web.session.SessionManagementFilter@321b4f71, org.springframework.security.web.access.ExceptionTranslationFilter@3c606abe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c663425]
+2022-01-25 23:37:59.598  INFO 13888 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-25 23:37:59.774  INFO 13888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-25 23:37:59.813  INFO 13888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-25 23:37:59.824  INFO 13888 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Started QuestionnaireSystemApplication in 3.978 seconds (JVM running for 4.885)
+2022-01-25 23:38:04.595  INFO 13888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-25 23:38:04.596  INFO 13888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-25 23:38:04.597  INFO 13888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-25 23:38:06.534  INFO 13888 --- [http-nio-8080-exec-5] c.v.q.controller.AuthController          : Successful login admin@mail.com
+2022-01-25 23:38:15.243  INFO 13888 --- [http-nio-8080-exec-2] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:38:16.916  INFO 13888 --- [http-nio-8080-exec-4] c.v.q.controller.UserAnswerController    : show answer on question for user Petr
+2022-01-25 23:38:17.992  INFO 13888 --- [http-nio-8080-exec-6] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:38:18.551  INFO 13888 --- [http-nio-8080-exec-8] c.v.q.controller.UserAnswerController    : show answer on question for user Ivan
+2022-01-25 23:38:20.344  INFO 13888 --- [http-nio-8080-exec-10] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:38:21.316  INFO 13888 --- [http-nio-8080-exec-2] c.v.q.controller.UserAnswerController    : show answer on question for user Petr
+2022-01-25 23:38:31.767  INFO 13888 --- [http-nio-8080-exec-4] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:38:37.672  INFO 13888 --- [http-nio-8080-exec-6] c.v.q.controller.UserAnswerController    : show answer on question for user Ivan
+2022-01-25 23:39:07.524  INFO 11552 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 11552 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-25 23:39:07.526  INFO 11552 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-25 23:39:07.597  INFO 11552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-25 23:39:07.598  INFO 11552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-25 23:39:08.293  INFO 11552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-25 23:39:08.362  INFO 11552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 6 JPA repository interfaces.
+2022-01-25 23:39:08.968  INFO 11552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-25 23:39:08.976  INFO 11552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-25 23:39:08.976  INFO 11552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-25 23:39:09.050  INFO 11552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-25 23:39:09.050  INFO 11552 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1452 ms
+2022-01-25 23:39:09.080  INFO 11552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-25 23:39:09.162  INFO 11552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-25 23:39:09.171  INFO 11552 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f8062621-1b86-4961-9073-19c40c3fa89c'
+2022-01-25 23:39:09.269  WARN 11552 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #13 of URL [file:/D:/IdeaProjects/questionnaire-system/target/classes/data.sql]: INSERT INTO users_answer (id, answer_id, user_id) values (4, 8, 2), (4, 9, 2), (5, 14, 2), (6, 10, 3), (7, 12, 3); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Нарушение уникального индекса или первичного ключа: "PRIMARY KEY ON PUBLIC.USERS_ANSWER(ID) [4, 8, 2]"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USERS_ANSWER(ID) [4, 8, 2]"; SQL statement:
+INSERT INTO users_answer (id, answer_id, user_id) values (4, 8, 2), (4, 9, 2), (5, 14, 2), (6, 10, 3), (7, 12, 3) [23505-200]
+2022-01-25 23:39:09.270  INFO 11552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-25 23:39:09.272  INFO 11552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-25 23:39:09.274  INFO 11552 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-25 23:39:09.286  INFO 11552 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-25 23:39:09.308 ERROR 11552 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #13 of URL [file:/D:/IdeaProjects/questionnaire-system/target/classes/data.sql]: INSERT INTO users_answer (id, answer_id, user_id) values (4, 8, 2), (4, 9, 2), (5, 14, 2), (6, 10, 3), (7, 12, 3); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Нарушение уникального индекса или первичного ключа: "PRIMARY KEY ON PUBLIC.USERS_ANSWER(ID) [4, 8, 2]"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USERS_ANSWER(ID) [4, 8, 2]"; SQL statement:
+INSERT INTO users_answer (id, answer_id, user_id) values (4, 8, 2), (4, 9, 2), (5, 14, 2), (6, 10, 3), (7, 12, 3) [23505-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.2.jar:2.6.2]
+	at com.vladimir.questionnaire_app.QuestionnaireSystemApplication.main(QuestionnaireSystemApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #13 of URL [file:/D:/IdeaProjects/questionnaire-system/target/classes/data.sql]: INSERT INTO users_answer (id, answer_id, user_id) values (4, 8, 2), (4, 9, 2), (5, 14, 2), (6, 10, 3), (7, 12, 3); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Нарушение уникального индекса или первичного ключа: "PRIMARY KEY ON PUBLIC.USERS_ANSWER(ID) [4, 8, 2]"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USERS_ANSWER(ID) [4, 8, 2]"; SQL statement:
+INSERT INTO users_answer (id, answer_id, user_id) values (4, 8, 2), (4, 9, 2), (5, 14, 2), (6, 10, 3), (7, 12, 3) [23505-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.14.jar:5.3.14]
+	... 23 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Нарушение уникального индекса или первичного ключа: "PRIMARY KEY ON PUBLIC.USERS_ANSWER(ID) [4, 8, 2]"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USERS_ANSWER(ID) [4, 8, 2]"; SQL statement:
+INSERT INTO users_answer (id, answer_id, user_id) values (4, 8, 2), (4, 9, 2), (5, 14, 2), (6, 10, 3), (7, 12, 3) [23505-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:127) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:531) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:195) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	... 33 common frames omitted
+

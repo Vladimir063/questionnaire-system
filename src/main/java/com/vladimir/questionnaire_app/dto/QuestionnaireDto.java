@@ -14,6 +14,7 @@ import java.util.List;
 @ToString
 public class QuestionnaireDto {
 
+
     private Long id;
 
     @NotEmpty(message = "Введите название анкеты")

@@ -3,10 +3,11 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Delivery food</title>
+    <title>Мини анкетная ситема</title>
     <link rel="stylesheet"  href="/css/main.css"/>
 </head>
 <body>
+<div th:insert="~{fragments/header :: header}" ></div>
 <h1>Анкета:  <span th:text = "${questionnaire.name}"> </span> </h1>
 <h2>Пользователь:  <span th:text = "${user.name}"> </span> </h2>
 <form method="post" action="/save-results">
@@ -36,6 +37,9 @@
 </table>
     <button>Отправить ответы</button>
 </form>
+<br>
+<button type="button" onclick="window.location.href='/index'"> Назад </button>
+
 </body>
 </html>
 

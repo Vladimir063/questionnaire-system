@@ -3,10 +3,12 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Delivery food</title>
+    <title>Мини анкетная ситема</title>
     <link rel="stylesheet"  href="/css/main.css"/>
 </head>
 <body>
+<div th:insert="~{fragments/header :: header}" ></div>
+
 <h1>Добавление ответов к вопросу:
     <span th:text = "${question.name}"> </span>
 </h1>
@@ -19,6 +21,7 @@
         </tr>
         </thead>
         <tbody>
+
         <tr th:each="answer, itemStat : *{answersDto}">
             <td><input th:field="*{answersDto[__${itemStat.index}__].name}" />
                 <input type="hidden" th:field="*{answersDto[__${itemStat.index}__].questionId}" />
@@ -27,7 +30,7 @@
         </tbody>
     </table>
     <input type="hidden" th:field="*{questionnaireId}" />
-    <input type="hidden" th:field="*{id}" />
+    <input type="hidden" th:field="*{id}" /> <br>
     <button>Сохранить</button>
 </form>
 

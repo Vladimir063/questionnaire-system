@@ -9,7 +9,7 @@
 }
 
 .content-table thead tr {
-    background-color: #5757a0;
+    background-color: darkred ;
     color: #ffffff;
     text-align: left;
     font-weight: bold;
@@ -29,7 +29,7 @@
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid darkred;;
 }
 
 .content-table tbody tr.active-row {
@@ -44,37 +44,28 @@
 
 
 
-/*форма логин*/
 
-.auth{
-    width: 500px;
-    padding: 20px;
-    margin: 20px auto;
-    text-align: center;
-    background-color: lightsteelblue;
-}
-
-.auth-title{
-    margin: 0 0 15px;
-    font-size: 20px;
-    color: #c61919;
-    text-align: center;
-}
-
-.auth-login-group input {
+/* button  */
+button {
     display: block;
-    margin: 10px auto;
-    padding: 10px 10px;
-}
-
-.auth button{
-    display: block;
-    padding: 10px 40px;
-    margin: 0 auto;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75em;
+    letter-spacing: 1px;
+    height: 38px;
+    width: 120px;
+    line-height: 38px;
+    overflow: hidden;
+    background: darkred;
+    border-radius: 3px;
+    box-shadow: 0 15px 30px rgba(black, .1);
+    border: 0;
+    cursor: pointer;
+    transition: all .3s ease;
     color: white;
-    background-color: #034c03;
 }
 
-.auth button:hover{
-    background-color: #04b604;
+input{
+    padding: 7px ;
 }

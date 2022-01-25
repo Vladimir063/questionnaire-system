@@ -4,6 +4,7 @@ import com.vladimir.questionnaire_app.entity.QuestionEntity;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Data
 @AllArgsConstructor

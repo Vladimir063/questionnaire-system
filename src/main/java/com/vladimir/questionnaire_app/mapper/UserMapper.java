@@ -11,9 +11,11 @@ import org.mapstruct.Mapping;
 public interface UserMapper {
 
     @Mapping(target ="userAnswersDto", source = "userAnswerEntities")
+    @Mapping(target = "password", ignore = true)
     UserDto userToDto(UserEntity userEntity);
 
     @Mapping(target ="userQuestionnaireEntities", ignore = true)
+    @Mapping(target = "password", source = "password")
     @InheritInverseConfiguration
     UserEntity userToEntity(UserDto userDto);
 }

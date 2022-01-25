@@ -3,19 +3,23 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Delivery food</title>
+    <title>Мини анкетная ситема</title>
     <link rel="stylesheet"  href="/css/main.css"/>
+
 </head>
 <body>
+<div th:insert="~{fragments/header :: header}" ></div>
 <h1>Создание новой анкеты</h1>
 
 <form method="post" action="/save-questionnaire" th:object="${questionnaire}">
-    <label for = "name">Введите имя анкеты</label>
+    <label for = "name">Введите имя анкеты</label><br>
     <input type="text" th:field = "*{name}" id = "name">
-    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" th:errorclass="invalid-input"></span>
+    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" th:errorclass="invalid-input"></span><br>
     <br>
     <button>Создать</button>
 </form>
+<br>
+<button type="button" onclick="window.location.href='/index'"> Назад </button>
 
 
 

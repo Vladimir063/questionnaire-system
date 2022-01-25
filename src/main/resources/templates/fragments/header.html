@@ -1,0 +1,8 @@
+<div class="header1" th:fragment="header" >
+<h3><a href="/index">Главная</a> <br>
+    Вы вошли как:
+    <span sec:authentication="name"></span> <br>
+    <span sec:authorize="isAuthenticated()"><a href="/auth/logout">Выйти</a></span>
+
+</h3>
+</div>

@@ -27,5 +27,4 @@ public class UserAnswerEntity {
     private AnswerEntity answerEntity;
 
 
-
 }

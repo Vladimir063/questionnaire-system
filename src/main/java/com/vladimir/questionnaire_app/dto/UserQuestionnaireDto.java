@@ -1,19 +1,17 @@
 package com.vladimir.questionnaire_app.dto;
 
-
-import com.vladimir.questionnaire_app.entity.AnswerEntity;
+import com.vladimir.questionnaire_app.entity.QuestionnaireEntity;
 import com.vladimir.questionnaire_app.entity.UserEntity;
 import lombok.*;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @ToString
-public class UserAnswerDto {
+public class UserQuestionnaireDto {
 
     private Long id;
 
@@ -21,11 +19,8 @@ public class UserAnswerDto {
 
     private String userName;
 
-    private Long answerId;
+    private String  questionnaireId;
 
-    private String answerName;
-
-    private String questionName;
-
+    private String questionnaireName;
 
 }

@@ -11,6 +11,9 @@ public interface UserAnswerMapper {
 
     @Mapping(target = "userId", source = "userEntity.id")
     @Mapping(target = "userName", source = "userEntity.name")
+    @Mapping(target = "answerId", source = "answerEntity.id")
+    @Mapping(target = "answerName", source = "answerEntity.name")
+    @Mapping(target = "questionName", source = "answerEntity.questionEntity.name")
     UserAnswerDto userAnswerToDto(UserAnswerEntity userAnswerEntity);
 
     @InheritInverseConfiguration

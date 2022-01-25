@@ -2,6 +2,7 @@ package com.vladimir.questionnaire_app.services;
 
 
 import com.google.common.collect.HashMultimap;
+import com.vladimir.questionnaire_app.dto.UserAnswerDto;
 import com.vladimir.questionnaire_app.entity.UserAnswerEntity;
 
 import java.util.Collection;
@@ -11,13 +12,13 @@ import java.util.Optional;
 
 public interface UserAnswerService {
 
-    List<UserAnswerEntity> findAll();
+    List<UserAnswerDto> findAll();
 
-    List<UserAnswerEntity> findAll2();
+    // List<UserAnswerDto> findAll2();
 
-    UserAnswerEntity  findById(Long id);
+    UserAnswerDto  findById(Long id);
 
-    List<UserAnswerEntity> findByUserAndQuestionnaire(Long userId, Long questionnaireId);
+    List<UserAnswerDto> findByUserAndQuestionnaire(Long userId, Long questionnaireId);
 
-    Map<String, Collection<String>> getAnswerOnQuestion(List<UserAnswerEntity> userAnswerEntities);
+    Map<String, Collection<String>> getAnswerOnQuestion(List<UserAnswerDto> userAnswerEntities);
 }

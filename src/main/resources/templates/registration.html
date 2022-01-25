@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Вход на сайт</title>
+    <link rel="stylesheet"  th:href="@{/css/login.css}"/>
+</head>
+<body>
+<div class="auth">
+    <h2 class="auth-title">Регистрация нового пользователя</h2>
+
+    <form  method="post" action="/auth/save-user" th:object="${user}">
+        <div class="auth-login-group">
+            <input type="text"   th:field="*{email}" placeholder="Email" required>
+        </div>
+        <div class="auth-login-group">
+            <input type="text"   th:field="*{name}" placeholder="Имя" required>
+        </div>
+
+        <div class="auth-login-group">
+            <input type="password" id="password" name="password" th:field="*{password}" placeholder="Пароль" required>
+        </div>
+
+        <div>
+            <input type="radio" id="contactChoice2"  th:name="role" value="ADMIN">
+            <label for="contactChoice2">ADMIN</label>
+
+            <input type="radio" id="contactChoice3"  th:name="role" value="USER">
+            <label for="contactChoice2">USER</label>
+        </div> <br>
+
+        <button  type="submit">Создать </button> <br>
+        <a href="/auth/login"> Вход на сайт </a>
+    </form>
+
+
+</div>
+</body>
+</html>

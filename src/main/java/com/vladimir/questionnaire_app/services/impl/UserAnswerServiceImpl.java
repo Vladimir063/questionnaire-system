@@ -1,9 +1,12 @@
 package com.vladimir.questionnaire_app.services.impl;
 
 import com.google.common.collect.HashMultimap;
+import com.vladimir.questionnaire_app.dto.UserAnswerDto;
 import com.vladimir.questionnaire_app.entity.AnswerEntity;
 import com.vladimir.questionnaire_app.entity.UserAnswerEntity;
 import com.vladimir.questionnaire_app.entity.UserEntity;
+import com.vladimir.questionnaire_app.exception.UserAnswerNotFoundException;
+import com.vladimir.questionnaire_app.mapper.UserAnswerMapper;
 import com.vladimir.questionnaire_app.repository.UserAnswerRepository;
 import com.vladimir.questionnaire_app.repository.UserRepository;
 import com.vladimir.questionnaire_app.services.UserAnswerService;
@@ -16,43 +19,41 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
 public class UserAnswerServiceImpl implements UserAnswerService {
 
     private final UserAnswerRepository userAnswerRepository;
-    private final UserDetailServiceImpl userDetailServiceImpl;
+    private final UserAnswerMapper userAnswerMapper;
 
     @Override
-    public List<UserAnswerEntity> findAll() {
-        return userAnswerRepository.findAll();
+    public List<UserAnswerDto> findAll() {
+        List<UserAnswerEntity> userAnswerEntities = userAnswerRepository.findAll();
+        return userAnswerEntities.stream().map(userAnswerMapper::userAnswerToDto).collect(Collectors.toList());
     }
 
-    @Override
-    public List<UserAnswerEntity> findAll2() {
-        return userAnswerRepository.findAll();
-    }
 
     @Override
-    public UserAnswerEntity findById(Long id) {
+    public UserAnswerDto findById(Long id) {
         UserAnswerEntity userAnswerEntity = userAnswerRepository.findById(id)
-                .orElseThrow(() -> new IllegalStateException());
-
-        return userAnswerEntity;
+                .orElseThrow(() -> new UserAnswerNotFoundException("userAnswerEntity not found by id = " + id));
+        return userAnswerMapper.userAnswerToDto(userAnswerEntity);
     }
 
     @Override
-    public List<UserAnswerEntity> findByUserAndQuestionnaire(Long userId, Long questionnaireId) {
-        return userAnswerRepository.findByUserIdAndQuestionnaireId(userId, questionnaireId);
+    public List<UserAnswerDto> findByUserAndQuestionnaire(Long userId, Long questionnaireId) {  // ищем заполненные анкеты для юзеров
+        List<UserAnswerEntity> userAnswerEntities = userAnswerRepository.findByUserIdAndQuestionnaireId(userId, questionnaireId);
+        return userAnswerEntities.stream().map(userAnswerMapper::userAnswerToDto).collect(Collectors.toList());
     }
 
     @Override
-    public Map<String, Collection<String>> getAnswerOnQuestion(List<UserAnswerEntity> userAnswerEntities) {
+    public Map<String, Collection<String>> getAnswerOnQuestion(List<UserAnswerDto> userAnswerDtos) {
         HashMultimap<String, String> map = HashMultimap.create();
-        for (UserAnswerEntity u : userAnswerEntities) {
-            String key = u.getAnswerEntity().getQuestionEntity().getName();
-            String value = u.getAnswerEntity().getName();
+        for (UserAnswerDto u : userAnswerDtos) {
+            String key = u.getQuestionName();
+            String value = u.getAnswerName();
             map.put(key, value);
         }
         return map.asMap();

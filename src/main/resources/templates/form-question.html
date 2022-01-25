@@ -3,21 +3,22 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Delivery food</title>
+    <title>Мини анкетная ситема</title>
     <link rel="stylesheet"  href="/css/main.css"/>
 </head>
 <body>
+<div th:insert="~{fragments/header :: header}" ></div>
 <h1>Анкета:  <span th:text = "${question.questionnaireName}"> </span> </h1>
 <h2 th:text = "${question.id == null} ? 'Добавление нового вопроса' : 'Редактирование вопроса' "> </h2>
 
 <form method="post" action="/save-or-update-question" th:object="${question}">
-    <label for="name">Введите название вопроса</label>
+    <label for="name">Введите название вопроса</label><br>
     <input type="text" th:field="*{name}" id="name">
-    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" th:errorclass="invalid-input"></span><br>
+    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" th:errorclass="invalid-input"></span><br><br>
 
-    <label for="countAnswer">Введите количество ответов для вопроса</label>
+    <label for="countAnswer">Введите количество ответов для вопроса</label><br>
     <span th:if="${#fields.hasErrors('countAnswer')}" th:errors="*{countAnswer}" th:errorclass="invalid-input"></span>
-    <input type="text" th:field="*{countAnswer}" id="countAnswer">
+    <input type="text" th:field="*{countAnswer}" id="countAnswer"><br><br>
 
     <button>Добавить ответы для вопроса</button>
 

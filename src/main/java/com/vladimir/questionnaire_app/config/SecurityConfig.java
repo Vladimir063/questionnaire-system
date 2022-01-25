@@ -19,6 +19,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -36,14 +37,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                // .antMatchers("/").permitAll()
                 .antMatchers("/css/**").permitAll()
-//                .antMatchers("/order/new", "/order/save-or-update-order-step1", "/restaurant/*/dish", "/order")
-//                .hasAuthority(Permission.DEVELOPERS_READ.getPermission())
-//                .antMatchers("/restaurant/**", "/order/**"  )
-//                .hasAuthority(Permission.DEVELOPERS_WRITE.getPermission())
-
-                .anyRequest().authenticated()
+                .antMatchers("/auth/registration", "/auth/save-user", "/auth/success").permitAll()
+                .antMatchers("/", "/index", "/questionnaire/*", "/fill-questionnaire/*", "/save-results")
+                .hasAuthority(Permission.DEVELOPERS_READ.getPermission())
+                .anyRequest().hasAuthority(Permission.DEVELOPERS_WRITE.getPermission())
                 .and()
                 .formLogin()
                 .loginPage("/auth/login").permitAll()
@@ -59,18 +57,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    @Override
-    protected UserDetailsService userDetailsService() {
-        return new InMemoryUserDetailsManager(
-                User.builder().username("admin")
-                        .password(passwordEncoder().encode("admin"))
-                        .authorities(Role.ADMIN.getAuthorities())
-                        .build(),
-                User.builder().username("user")
-                        .password(passwordEncoder().encode("user"))
-                        .authorities(Role.USER.getAuthorities())
-                        .build()
-        );
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder(12);
     }
 
     @Override
@@ -78,10 +66,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.authenticationProvider(daoAuthenticationProvider());
     }
 
-    @Bean
-    protected PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder(12);
-    }
 
     @Bean
     protected DaoAuthenticationProvider daoAuthenticationProvider() {
@@ -90,4 +74,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         daoAuthenticationProvider.setUserDetailsService(userDetailsService);
         return daoAuthenticationProvider;
     }
+
+
 }
+
+
+
+
+

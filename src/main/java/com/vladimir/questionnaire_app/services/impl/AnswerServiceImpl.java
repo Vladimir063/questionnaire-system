@@ -38,7 +38,6 @@ public class AnswerServiceImpl implements AnswerService {
     public void deleteOldList(QuestionDto questionDto){
         List<AnswerDto> answersDto = questionDto.getAnswersDto();
         QuestionEntity questionEntity = questionMapper.questionToEntity(questionDto);
-        System.out.println();
         answerRepository.deleteAllByQuestionEntity(questionEntity);
 
     }

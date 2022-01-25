@@ -3,10 +3,11 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Delivery food</title>
+    <title>Мини анкетная ситема</title>
     <link rel="stylesheet"  href="/css/main.css"/>
 </head>
 <body>
+<div th:insert="~{fragments/header :: header}" ></div>
 <h1>Анкета:
 <span th:text = "${questionnaire.name}"> </span>
 </h1>
@@ -15,11 +16,12 @@
 <table class="content-table", sortable="true">
     <thead>
     <tr>
-
         <th>Название вопроса</th>
         <th>Варианты ответов</th>
+        <div sec:authorize="hasAuthority('developers:write')">
         <th>Редактировать</th>
         <th>Удалить</th>
+        </div>
     </tr>
     </thead>
     <tbody>
@@ -31,19 +33,23 @@
             <div th:text = "${answer.name}"> </div>
         </div>
         </td>
+        <div sec:authorize="hasAuthority('developers:write')">
         <td><a th:href="@{'/edit-question/' + ${question.id}}">Редактировать</a></td>
         <td><a th:href="@{'/delete-question/' + ${question.id}}">Удалить</a></td>
+        </div>
     </tr>
     </tbody>
 </table>
 
-
+<div sec:authorize="hasAuthority('developers:write')">
 <form method="post" action="/add-new-question" th:object="${questionnaire}">
     <input type="hidden"  th:field = "${questionnaire.id}">
     <input type="hidden"  th:field = "${questionnaire.name}">
     <button>Добавить вопрос</button>
 </form>
-
+</div>
+<br>
+<button type="button" onclick="window.location.href='/index'"> Назад </button>
 
 </body>
 </html>

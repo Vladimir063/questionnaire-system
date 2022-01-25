@@ -3,10 +3,11 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Delivery food</title>
+    <title>Мини анкетная ситема</title>
     <link rel="stylesheet"  href="/css/main.css"/>
 </head>
 <body>
+<div th:insert="~{fragments/header :: header}" ></div>
 <h1>Все результаты анкетирования</h1>
 
 <table class="content-table", sortable="true">
@@ -19,13 +20,14 @@
     </thead>
     <tbody>
     <tr th:each="userQuestionnaire : ${userQuestionnaires}">
-        <td th:text = "${userQuestionnaire.userEntity.name}"></td>
-        <td th:text = "${userQuestionnaire.questionnaireEntity.name}"></td>
-        <td><a th:href="@{'/userAnswer/' + ${userQuestionnaire.userEntity.id} + '/'
-        + ${userQuestionnaire.questionnaireEntity.id} }">Просмотр</a></td>
+        <td th:text = "${userQuestionnaire.userName}"></td>
+        <td th:text = "${userQuestionnaire.questionnaireName}"></td>
+        <td><a th:href="@{'/userAnswer/' + ${userQuestionnaire.userId} + '/'
+        + ${userQuestionnaire.questionnaireId} }">Просмотр</a></td>
     </tr>
     </tbody>
 </table>
+<button type="button" onclick="window.location.href='/index'"> Назад </button>
 
 
 </body>

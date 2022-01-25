@@ -28,6 +28,6 @@ public class AnswerEntity {
     @JoinColumn(name = "question_id")
     private QuestionEntity questionEntity;
 
-    @OneToMany(mappedBy = "answerEntity")
+    @OneToMany(mappedBy = "answerEntity", cascade = CascadeType.ALL)
     private List<UserAnswerEntity> userAnswerEntities = new ArrayList<>();
 }

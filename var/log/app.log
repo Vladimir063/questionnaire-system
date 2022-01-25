@@ -3506,3 +3506,32 @@ INSERT INTO users_answer (id, answer_id, user_ud) values (1, 1, 3), (2, 4, 3), (
 2022-01-25 22:53:45.832  INFO 12032 --- [http-nio-8080-exec-6] c.v.q.c.QuestionnaireController          : fill questionnaire  О себе for user Admin 
 2022-01-25 22:53:49.927  INFO 12032 --- [http-nio-8080-exec-8] c.v.q.c.QuestionnaireController          : save results fill questionnaire for user Admin
 2022-01-25 22:53:52.042  INFO 12032 --- [http-nio-8080-exec-1] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-25 23:05:21.864  INFO 8016 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 8016 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-25 23:05:21.866  INFO 8016 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-25 23:05:21.926  INFO 8016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-25 23:05:21.926  INFO 8016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-25 23:05:22.575  INFO 8016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-25 23:05:22.641  INFO 8016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+2022-01-25 23:05:23.166  INFO 8016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-25 23:05:23.174  INFO 8016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-25 23:05:23.174  INFO 8016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-25 23:05:23.247  INFO 8016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-25 23:05:23.248  INFO 8016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1321 ms
+2022-01-25 23:05:23.278  INFO 8016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-25 23:05:23.357  INFO 8016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-25 23:05:23.365  INFO 8016 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:78779a01-6478-4f2e-8dc6-2a3ca5df0a4b'
+2022-01-25 23:05:23.501  INFO 8016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-25 23:05:23.532  INFO 8016 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-25 23:05:23.624  INFO 8016 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-25 23:05:23.710  INFO 8016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-25 23:05:24.190  INFO 8016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-25 23:05:24.197  INFO 8016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-25 23:05:24.491  WARN 8016 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-25 23:05:24.861  INFO 8016 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e91e2b4, org.springframework.security.web.context.SecurityContextPersistenceFilter@73a6e95, org.springframework.security.web.header.HeaderWriterFilter@2f2556d3, org.springframework.security.web.authentication.logout.LogoutFilter@7b2f2924, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@bd87edd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c540183, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5063d76c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31f45cb2, org.springframework.security.web.session.SessionManagementFilter@6e05b0df, org.springframework.security.web.access.ExceptionTranslationFilter@2f848e67, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78b5e14a]
+2022-01-25 23:05:25.051  INFO 8016 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-25 23:05:25.224  INFO 8016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-25 23:05:25.263  INFO 8016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-25 23:05:25.274  INFO 8016 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Started QuestionnaireSystemApplication in 3.822 seconds (JVM running for 4.573)
+2022-01-25 23:05:32.382  INFO 8016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-25 23:05:32.383  INFO 8016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-25 23:05:32.384  INFO 8016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

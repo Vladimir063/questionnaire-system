@@ -1,7 +1,7 @@
 INSERT INTO users (email, name, password, role)
 VALUES ('admin@mail.com', 'Admin', '$2a$12$e7g3K/CTygBiGk8Xqtrj7O1EQqafthvOk6nX/9AW2PcMSInZxErda', 'ADMIN'),
-       ('ivan@mail.com', 'Ivan', '$2a$12$bQpRgYoq8HbfT3W9tOzDo.awjpxmhJ6YPDGBDbSjLLDZycp/KIBbO', 'USER'),
-       ('petr@mail.com', 'Petr', '$2a$12$bQpRgYoq8HbfT3W9tOzDo.awjpxmhJ6YPDGBDbSjLLDZycp/KIBbO', 'USER');
+       ('ivan@mail.com', 'Ivan', '$2a$12$tE34WArdAPDmqa0zdMESF.bVVl/d2FktoLoA.UuHdI1QKHJXVYgV.', 'USER'),
+       ('petr@mail.com', 'Petr', '$2a$12$t2E/iTEUx2Rud63HRIfpZ.7MCPbQI0WbUehjoH2NcT15uYp/os54C', 'USER');
 
 INSERT INTO questionnaires (id, name)
 values (1, 'О себе'),

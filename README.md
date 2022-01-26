@@ -16,8 +16,8 @@ H2, Maven, JUnit, Mockito, MapStruct, Slf4j, Thymeleaf.
 | ivan@mail.com   | ivan| USER 
 ________________________________________________________________________________
 
-###Схема базы данных
-__________________________________________________
+### Схема базы данных
+
 ![alt text](readme-images/shema-DB.png)
 ### Интерфейс
 ![alt text](readme-images/interface.jpg)

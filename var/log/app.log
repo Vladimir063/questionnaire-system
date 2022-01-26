@@ -1,0 +1,124 @@
+2022-01-26 21:44:14.633  INFO 12328 --- [main] c.v.q.services.QuestionServiceImplTest   : Starting QuestionServiceImplTest using Java 11.0.12 on HOME-PC with PID 12328 (started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-26 21:44:14.635  INFO 12328 --- [main] c.v.q.services.QuestionServiceImplTest   : No active profile set, falling back to default profiles: default
+2022-01-26 21:44:15.722  INFO 12328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-26 21:44:15.817  INFO 12328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 6 JPA repository interfaces.
+2022-01-26 21:44:16.499  INFO 12328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-26 21:44:16.692  INFO 12328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-26 21:44:16.904  INFO 12328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-26 21:44:16.964  INFO 12328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-26 21:44:17.177  INFO 12328 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-26 21:44:17.313  INFO 12328 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-26 21:44:18.014  INFO 12328 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-26 21:44:18.022  INFO 12328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 21:44:18.484  WARN 12328 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-26 21:44:19.208  INFO 12328 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b9bbaa8, org.springframework.security.web.context.SecurityContextPersistenceFilter@72d7afff, org.springframework.security.web.header.HeaderWriterFilter@5a8835c6, org.springframework.security.web.authentication.logout.LogoutFilter@7ab2e018, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6097f225, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@311453ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3962b216, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11771fd6, org.springframework.security.web.session.SessionManagementFilter@c7a1db6, org.springframework.security.web.access.ExceptionTranslationFilter@5b8599c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@294a12b5]
+2022-01-26 21:44:19.806  INFO 12328 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c4998192-82f0-4da9-aa63-c876d84c33a4'
+2022-01-26 21:44:19.899  INFO 12328 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-26 21:44:20.340  INFO 12328 --- [main] c.v.q.services.QuestionServiceImplTest   : Started QuestionServiceImplTest in 6.367 seconds (JVM running for 10.859)
+2022-01-26 21:44:20.816  INFO 12328 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 21:44:20.820  INFO 12328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-26 21:44:20.825  INFO 12328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-26 21:44:45.777  INFO 11276 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 11276 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-26 21:44:45.778  INFO 11276 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-26 21:44:45.823  INFO 11276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-26 21:44:45.823  INFO 11276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-26 21:44:46.492  INFO 11276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-26 21:44:46.557  INFO 11276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+2022-01-26 21:44:47.340  INFO 11276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-26 21:44:47.349  INFO 11276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-26 21:44:47.349  INFO 11276 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-26 21:44:47.443  INFO 11276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-26 21:44:47.443  INFO 11276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1619 ms
+2022-01-26 21:44:47.482  INFO 11276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-26 21:44:47.563  INFO 11276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-26 21:44:47.572  INFO 11276 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e10cb75e-63c7-4b36-8137-41701ebea807'
+2022-01-26 21:44:47.791  INFO 11276 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-26 21:44:47.823  INFO 11276 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-26 21:44:47.911  INFO 11276 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-26 21:44:47.985  INFO 11276 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-26 21:44:48.473  INFO 11276 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-26 21:44:48.480  INFO 11276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 21:44:48.771  WARN 11276 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-26 21:44:49.149  INFO 11276 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62b3c270, org.springframework.security.web.context.SecurityContextPersistenceFilter@153a39ec, org.springframework.security.web.header.HeaderWriterFilter@25a39eb6, org.springframework.security.web.authentication.logout.LogoutFilter@7131e3ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7116e2a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40a4f5ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@be6cc45, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72a6db2f, org.springframework.security.web.session.SessionManagementFilter@182d1e29, org.springframework.security.web.access.ExceptionTranslationFilter@38530ed3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@279d0035]
+2022-01-26 21:44:49.339  INFO 11276 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-26 21:44:49.538  INFO 11276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-26 21:44:49.612  INFO 11276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-26 21:44:49.635  INFO 11276 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Started QuestionnaireSystemApplication in 4.275 seconds (JVM running for 5.089)
+2022-01-26 21:44:59.156  INFO 11276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-26 21:44:59.157  INFO 11276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-26 21:44:59.159  INFO 11276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-01-26 21:45:05.155  INFO 11276 --- [http-nio-8080-exec-10] c.v.q.controller.AuthController          : Successful login admin@mail.com
+2022-01-26 21:45:09.600  INFO 11276 --- [http-nio-8080-exec-6] c.v.q.controller.QuestionController      : edit question with id = 1
+2022-01-26 21:45:14.566  INFO 11276 --- [http-nio-8080-exec-9] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:45:19.490  WARN 11276 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'questionDto' on field 'name': rejected value [null]; codes [NotBlank.questionDto.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [questionDto.name,name]; arguments []; default message [name]]; default message [Введите название вопроса]]
+2022-01-26 21:45:28.117  INFO 11276 --- [http-nio-8080-exec-2] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:45:29.869  INFO 11276 --- [http-nio-8080-exec-4] c.v.q.controller.QuestionController      : edit question with id = 1
+2022-01-26 21:45:31.551  INFO 11276 --- [http-nio-8080-exec-8] c.v.q.controller.QuestionController      : edit question with id = 1
+2022-01-26 21:45:34.809  INFO 11276 --- [http-nio-8080-exec-1] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:45:37.065  WARN 11276 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'questionDto' on field 'name': rejected value [null]; codes [NotBlank.questionDto.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [questionDto.name,name]; arguments []; default message [name]]; default message [Введите название вопроса]]
+2022-01-26 21:45:46.133  INFO 11276 --- [http-nio-8080-exec-4] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:45:48.253  INFO 11276 --- [http-nio-8080-exec-6] c.v.q.controller.QuestionController      : edit question with id = 1
+2022-01-26 21:45:52.496  INFO 11276 --- [http-nio-8080-exec-9] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:45:59.240  INFO 11276 --- [http-nio-8080-exec-5] c.v.q.controller.QuestionController      : start add new question for questionnaire О себе
+2022-01-26 21:46:02.679  INFO 11276 --- [http-nio-8080-exec-8] c.v.q.controller.QuestionController      : start add new answers for question 6
+2022-01-26 21:46:05.969  WARN 11276 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'questionDto' on field 'name': rejected value [null]; codes [NotBlank.questionDto.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [questionDto.name,name]; arguments []; default message [name]]; default message [Введите название вопроса]]
+2022-01-26 21:46:13.837  INFO 11276 --- [http-nio-8080-exec-1] c.v.q.controller.QuestionController      : start add new answers for question 6
+2022-01-26 21:46:21.345  INFO 11276 --- [http-nio-8080-exec-5] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-26 21:46:24.692  INFO 11276 --- [http-nio-8080-exec-7] c.v.q.controller.UserAnswerController    : show answer on question for user Petr
+2022-01-26 21:46:25.766  INFO 11276 --- [http-nio-8080-exec-9] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-26 21:46:26.640  INFO 11276 --- [http-nio-8080-exec-1] c.v.q.controller.UserAnswerController    : show answer on question for user Petr
+2022-01-26 21:46:27.382  INFO 11276 --- [http-nio-8080-exec-3] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-26 21:46:32.644  INFO 11276 --- [http-nio-8080-exec-1] c.v.q.c.QuestionnaireController          : fill questionnaire  О себе for user Admin 
+2022-01-26 21:46:36.173  INFO 11276 --- [http-nio-8080-exec-3] c.v.q.c.QuestionnaireController          : save results fill questionnaire for user Admin
+2022-01-26 21:46:37.664  INFO 11276 --- [http-nio-8080-exec-6] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-26 21:46:38.622  INFO 11276 --- [http-nio-8080-exec-8] c.v.q.controller.UserAnswerController    : show answer on question for user Admin
+2022-01-26 21:46:39.895  INFO 11276 --- [http-nio-8080-exec-10] c.v.q.c.UserQuestionnaireController      : show all results
+2022-01-26 21:46:43.516  INFO 11276 --- [http-nio-8080-exec-4] c.v.q.c.QuestionnaireController          : delete questionnaire by id 2
+2022-01-26 21:46:44.401  INFO 11276 --- [http-nio-8080-exec-7] c.v.q.c.QuestionnaireController          : edit questionnaire О себе
+2022-01-26 21:46:47.349  INFO 11276 --- [http-nio-8080-exec-9] c.v.q.c.QuestionnaireController          : update questionnaire О себе
+2022-01-26 21:46:50.129  INFO 11276 --- [http-nio-8080-exec-2] c.v.q.controller.QuestionController      : delete question with id = 6
+2022-01-26 21:46:52.583  INFO 11276 --- [http-nio-8080-exec-5] c.v.q.controller.QuestionController      : edit question with id = 1
+2022-01-26 21:46:53.618  INFO 11276 --- [http-nio-8080-exec-8] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:46:55.169  WARN 11276 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'questionDto' on field 'name': rejected value [null]; codes [NotBlank.questionDto.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [questionDto.name,name]; arguments []; default message [name]]; default message [Введите название вопроса]]
+2022-01-26 21:46:59.112  INFO 11276 --- [http-nio-8080-exec-1] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:47:34.163  INFO 12728 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 12728 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-26 21:47:34.165  INFO 12728 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-26 21:47:34.219  INFO 12728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-26 21:47:34.219  INFO 12728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-26 21:47:35.018  INFO 12728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-26 21:47:35.118  INFO 12728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 6 JPA repository interfaces.
+2022-01-26 21:47:35.820  INFO 12728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-26 21:47:35.828  INFO 12728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-26 21:47:35.829  INFO 12728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-26 21:47:35.925  INFO 12728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-26 21:47:35.925  INFO 12728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1706 ms
+2022-01-26 21:47:35.965  INFO 12728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-26 21:47:36.079  INFO 12728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-26 21:47:36.088  INFO 12728 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:35eb3571-2a8e-4d85-aa14-ee625380c1e0'
+2022-01-26 21:47:36.281  INFO 12728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-26 21:47:36.325  INFO 12728 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-26 21:47:36.450  INFO 12728 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-26 21:47:36.545  INFO 12728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-26 21:47:37.208  INFO 12728 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-26 21:47:37.215  INFO 12728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 21:47:37.650  WARN 12728 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-26 21:47:38.177  INFO 12728 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69f1d272, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c0d25b4, org.springframework.security.web.header.HeaderWriterFilter@5e7d53f4, org.springframework.security.web.authentication.logout.LogoutFilter@34c94308, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a3e6344, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58eff336, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65713679, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ebbe48a, org.springframework.security.web.session.SessionManagementFilter@55e0c680, org.springframework.security.web.access.ExceptionTranslationFilter@d069361, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@89e1c57]
+2022-01-26 21:47:38.432  INFO 12728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-26 21:47:38.664  INFO 12728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-26 21:47:38.715  INFO 12728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-26 21:47:38.728  INFO 12728 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Started QuestionnaireSystemApplication in 4.997 seconds (JVM running for 6.705)
+2022-01-26 21:47:46.697  INFO 12728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-26 21:47:46.698  INFO 12728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-26 21:47:46.699  INFO 12728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-26 21:47:50.717  INFO 12728 --- [http-nio-8080-exec-5] c.v.q.controller.AuthController          : Successful login admin@mail.com
+2022-01-26 21:47:53.048  INFO 12728 --- [http-nio-8080-exec-8] c.v.q.c.QuestionnaireController          : edit questionnaire О себе
+2022-01-26 21:47:54.032  INFO 12728 --- [http-nio-8080-exec-10] c.v.q.c.QuestionnaireController          : update questionnaire О себе
+2022-01-26 21:47:55.411  INFO 12728 --- [http-nio-8080-exec-3] c.v.q.controller.QuestionController      : edit question with id = 1
+2022-01-26 21:47:57.544  INFO 12728 --- [http-nio-8080-exec-6] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:48:00.978  WARN 12728 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'questionDto' on field 'name': rejected value [null]; codes [NotBlank.questionDto.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [questionDto.name,name]; arguments []; default message [name]]; default message [Введите название вопроса]]
+2022-01-26 21:48:10.822  INFO 12728 --- [http-nio-8080-exec-9] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:48:18.431  INFO 12728 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 21:48:18.669  WARN 12728 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-01-26 21:48:18.670  INFO 12728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-26 21:48:18.673  INFO 12728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -20,7 +20,8 @@ public class AnswerController {
     private final AnswerService answerService;
 
     @PostMapping("/save-answers")
-    public String saveAnswers(@Valid  @ModelAttribute() QuestionDto questionDto) {
+    public String saveAnswers(@ModelAttribute QuestionDto questionDto) {
+        System.out.println();
         List<AnswerDto> answersDto = questionDto.getAnswersDto();
         log.info("save  {}", answersDto);
         answerService.saveAnswers(answersDto, questionDto);

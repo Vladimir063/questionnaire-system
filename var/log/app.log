@@ -122,3 +122,48 @@
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
 2022-01-26 21:48:18.670  INFO 12728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-01-26 21:48:18.673  INFO 12728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-26 21:48:46.528  INFO 12952 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Starting QuestionnaireSystemApplication using Java 11.0.12 on HOME-PC with PID 12952 (D:\IdeaProjects\questionnaire-system\target\classes started by Vladimir in D:\IdeaProjects\questionnaire-system)
+2022-01-26 21:48:46.530  INFO 12952 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : No active profile set, falling back to default profiles: default
+2022-01-26 21:48:46.582  INFO 12952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-26 21:48:46.583  INFO 12952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-26 21:48:47.248  INFO 12952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-26 21:48:47.317  INFO 12952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 6 JPA repository interfaces.
+2022-01-26 21:48:47.842  INFO 12952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-26 21:48:47.850  INFO 12952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-26 21:48:47.850  INFO 12952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-26 21:48:47.922  INFO 12952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-26 21:48:47.923  INFO 12952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1339 ms
+2022-01-26 21:48:47.952  INFO 12952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-26 21:48:48.033  INFO 12952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-26 21:48:48.041  INFO 12952 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:5f33c819-2aff-4ab8-ab46-4880e2a99ff9'
+2022-01-26 21:48:48.183  INFO 12952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-26 21:48:48.214  INFO 12952 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-26 21:48:48.303  INFO 12952 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-26 21:48:48.387  INFO 12952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-26 21:48:48.881  INFO 12952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-26 21:48:48.888  INFO 12952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 21:48:49.189  WARN 12952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-26 21:48:49.584  INFO 12952 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@524f1f36, org.springframework.security.web.context.SecurityContextPersistenceFilter@29748b44, org.springframework.security.web.header.HeaderWriterFilter@19faa152, org.springframework.security.web.authentication.logout.LogoutFilter@53de33a0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66707577, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a8dfdc0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25acf440, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3839db97, org.springframework.security.web.session.SessionManagementFilter@2df03b3a, org.springframework.security.web.access.ExceptionTranslationFilter@5f0557d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b4bfec5]
+2022-01-26 21:48:49.792  INFO 12952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-26 21:48:49.979  INFO 12952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-26 21:48:50.020  INFO 12952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-26 21:48:50.031  INFO 12952 --- [restartedMain] c.v.q.QuestionnaireSystemApplication     : Started QuestionnaireSystemApplication in 3.914 seconds (JVM running for 4.692)
+2022-01-26 21:48:54.716  INFO 12952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-26 21:48:54.717  INFO 12952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-26 21:48:54.718  INFO 12952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-26 21:48:56.782  INFO 12952 --- [http-nio-8080-exec-5] c.v.q.controller.AuthController          : Successful login admin@mail.com
+2022-01-26 21:48:59.376  INFO 12952 --- [http-nio-8080-exec-8] c.v.q.c.QuestionnaireController          : edit questionnaire О себе
+2022-01-26 21:49:00.406  INFO 12952 --- [http-nio-8080-exec-10] c.v.q.c.QuestionnaireController          : update questionnaire О себе
+2022-01-26 21:49:01.512  INFO 12952 --- [http-nio-8080-exec-3] c.v.q.controller.QuestionController      : edit question with id = 1
+2022-01-26 21:49:02.857  INFO 12952 --- [http-nio-8080-exec-6] c.v.q.controller.QuestionController      : start add new answers for question 1
+2022-01-26 21:49:05.546  INFO 12952 --- [http-nio-8080-exec-8] c.v.q.controller.AnswerController        : save  [AnswerDto(id=null, name=Меньше 20, questionId=1, questionName=null), AnswerDto(id=null, name=От 20 до 50, questionId=1, questionName=null), AnswerDto(id=null, name=Больше 50, questionId=1, questionName=null), AnswerDto(id=null, name=000, questionId=1, questionName=null)]
+2022-01-26 21:49:42.153  INFO 12952 --- [http-nio-8080-exec-5] c.v.q.c.QuestionnaireController          : start add new questionnaire
+2022-01-26 21:49:48.410  INFO 12952 --- [http-nio-8080-exec-7] c.v.q.c.QuestionnaireController          : save questionnaire hfghrty
+2022-01-26 21:49:49.584  INFO 12952 --- [http-nio-8080-exec-10] c.v.q.controller.QuestionController      : start add new question for questionnaire hfghrty
+2022-01-26 21:49:54.093  INFO 12952 --- [http-nio-8080-exec-3] c.v.q.controller.QuestionController      : start add new answers for question 6
+2022-01-26 21:50:00.009  INFO 12952 --- [http-nio-8080-exec-6] c.v.q.controller.AnswerController        : save  [AnswerDto(id=null, name=fsdfsd, questionId=6, questionName=null), AnswerDto(id=null, name=fsdfsfsdfsd, questionId=6, questionName=null), AnswerDto(id=null, name=sfsdfsdfsdfsdf, questionId=6, questionName=null)]
+2022-01-26 21:50:01.974  INFO 12952 --- [http-nio-8080-exec-9] c.v.q.controller.QuestionController      : edit question with id = 6
+2022-01-26 21:50:05.314  INFO 12952 --- [http-nio-8080-exec-2] c.v.q.controller.QuestionController      : start add new answers for question 6
+2022-01-26 21:50:08.545  INFO 12952 --- [http-nio-8080-exec-4] c.v.q.controller.AnswerController        : save  [AnswerDto(id=null, name=fsdfsd442, questionId=6, questionName=null), AnswerDto(id=null, name=fsdfsfsdfsd, questionId=6, questionName=null), AnswerDto(id=null, name=sfsdfsdfsdfsdf, questionId=6, questionName=null), AnswerDto(id=null, name=fsdfsdf, questionId=6, questionName=null)]
+2022-01-26 21:50:54.479  INFO 12952 --- [http-nio-8080-exec-9] c.v.q.c.QuestionnaireController          : delete questionnaire by id 3
+2022-01-26 21:53:01.399  INFO 12952 --- [http-nio-8080-exec-4] c.v.q.c.UserQuestionnaireController      : show all results
